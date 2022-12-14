@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import React, { Fragment, ReactNode, useEffect, useState } from 'react'
+import NavBar from '../../components/NavBar'
 
 const Dropdown = ({
   title,
@@ -121,6 +122,7 @@ const Prediction = () => {
 
   return (
     <Fragment>
+      <NavBar />
       <div className="predition-wrapper">
         <Dropdown
           title="LATITUDE"

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavBar from '../components/NavBar'
 
 export default function Home() {
   return (
@@ -12,12 +13,13 @@ export default function Home() {
       </Head>
       <div className="hero">
         <div className="hero-img"></div>
-        <nav>
-          <a>HOME</a>
-          <a>CONTACT US</a>
-          <a>ABOUT</a>
-          <a>HOW TO USE</a>
-        </nav>
+        {/* <nav>
+          <Link href={'/'}>HOME</Link>
+          <Link href={'/contact-us'}>CONTACT US</Link>
+          <Link href={'/about-us'}>ABOUT</Link>
+          <Link href={'/how-to-use'}>HOW TO USE</Link>
+        </nav> */}
+        <NavBar style={{ borderBottom: 'none' }} />
         <Link className="hero-button" href={'/prediction'}>
           START PREDICITION
         </Link>
