@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
 #nprogress .bar {
   background: #8EC3B0 !important;
   height: 4px;
@@ -47,6 +54,15 @@ a {
   z-index: 0;
 }
 
+.hero-button-wrapper {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
 .hero-button {
   color: #000;
   background-color: #8EC3B0;
@@ -57,19 +73,17 @@ a {
   line-height: 1px;
   font-size: 20px;
   font-weight: bold;
-  position: absolute;
-  top: 70%;
-  left: 0;
-  right: 0;
+  line-height: 1;
+  display: block;
   margin: auto;
-  z-index: 1;
-
-
+  margin-bottom: 2rem;
 }
 
 button {
   cursor: pointer;
   transition: ease-in-out 300ms;
+  padding: inherit;
+  margin: inherit;
 }
 
 button:hover {
@@ -155,8 +169,9 @@ nav a {
 }
 
 .single-prediction-wrapper {
+  flex: 1;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -164,7 +179,7 @@ nav a {
 .single-prediction {
   background-color: #8EC3B0;
   padding: 2rem;
-  width: 800px;
+  width: 1000px;
   margin: auto;
   font-size: 1.3rem;
 }
@@ -175,4 +190,30 @@ nav a {
 
 .bold {
   font-weight: bold;
+}
+
+.disabled {
+  background-color: #ddd;
+  user-select: none;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 1rem;
+  padding: .5em;
+}
+
+
+td {
+  height: 10px;
+  padding: auto;
 }

@@ -41,46 +41,46 @@ const SinglePrediciton = () => {
           ) : data ? (
             <Fragment>
               <p>
-                <span className="bold">Prediction is:&nbsp;</span> Yes, There is a
-                Chance Of Road Accident! Be Careful.
+                <span className="bold">Prediction is:&nbsp;</span> Yes, There is
+                a Chance Of Road Accident! Be Careful.
               </p>
               <p>
-                <span className="bold">Cause:&nbsp;</span>High gradient of the
-                road that causes vehicles to descend at full speed, especially
-                when the driver turns off the ignition and engages the neutral
-                gear.
+                <span className="bold">Cause:&nbsp;</span>
+                {data.causes}
               </p>
               <p>
-                <span className="bold">Date:&nbsp;</span>
-                {data.date || '-'}
+                <span className="bold">Summary:&nbsp;</span>
               </p>
-              <p>
-                <span className="bold">Time:&nbsp;</span>
-                {data.time || '-'}
-              </p>
-              <p>
-                <span className="bold">Latitude:&nbsp;</span>
-                {data.latitude || '-'}
-              </p>
-              <p>
-                <span className="bold">Longitude:&nbsp;</span>
-                {data.longitude || '-'}
-              </p>
-              <p>
-                <span className="bold">Light_condition:&nbsp;</span>
-                {data.light_condition || '-'}
-              </p>
-              <p>
-                <span className="bold">Weather_condition:&nbsp;</span>
-                {data.weather_condition || '-'}
-              </p>
-              <p>
-                <span className="bold">Visibility:&nbsp;</span>
-                {data.visibility || '-'}
-              </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Light Condition</th>
+                    <th>Weather Condition</th>
+                    <th>Visiblilty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> {data.date || '-'}</td>
+                    <td> {data.time || '-'}</td>
+                    <td> {data.latitude || '-'}</td>
+                    <td> {data.longitude || '-'}</td>
+                    <td> {data.light_condition || '-'}</td>
+                    <td> {data.weather_condition || '-'}</td>
+                    <td> {data.visibility || '-'}</td>
+                  </tr>
+                </tbody>
+              </table>
             </Fragment>
           ) : (
-            <p>No Data Found!</p>
+            <p>
+              <span className="bold">Prediction is:&nbsp;</span> No, There is no
+              chance of road accidents!
+            </p>
           )}
         </div>
       </div>
