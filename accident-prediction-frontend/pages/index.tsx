@@ -1,12 +1,10 @@
-import axios from 'axios'
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState } from 'react'
 import NavBar from '../components/NavBar'
 
 export default function Home() {
-  const [csvUploaded, setCsvUploaded] = useState(false)
-  const [uploading, setuploading] = useState(false)
+  // const [csvUploaded, setCsvUploaded] = useState(false)
+  // const [uploading, setuploading] = useState(false)
 
   // const checkCSV = () => {
   //   axios
@@ -23,39 +21,40 @@ export default function Home() {
   //       return null
   //     })
   // }
-  let timer: any
-  const handleCSVUpload = (e: any) => {
-    if (timer) clearTimeout(timer)
-    setuploading(true)
-    timer = setTimeout(() => {
-      let input = e.target.files[0]
-      console.log(input)
-      if (input) {
-        let form = new FormData()
-        form.append('csv', input)
 
-        axios
-          .request({
-            method: 'POST',
-            url: `http://localhost:4000/csv/upload`,
-            data: form,
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
-          })
+  // let timer: any
+  // const handleCSVUpload = (e: any) => {
+  //   if (timer) clearTimeout(timer)
+  //   setuploading(true)
+  //   timer = setTimeout(() => {
+  //     let input = e.target.files[0]
+  //     console.log(input)
+  //     if (input) {
+  //       let form = new FormData()
+  //       form.append('csv', input)
 
-          .then((res) => {
-            if (!res || !res.data) return
-            return setCsvUploaded(true)
-          })
-          .catch((err) => {
-            console.log(err)
-            return null
-          })
-        setuploading(false)
-      }
-    }, 1000)
-  }
+  //       axios
+  //         .request({
+  //           method: 'POST',
+  //           url: `http://localhost:4000/csv/upload`,
+  //           data: form,
+  //           headers: {
+  //             'Content-Type': 'multipart/form-data',
+  //           },
+  //         })
+
+  //         .then((res) => {
+  //           if (!res || !res.data) return
+  //           return setCsvUploaded(true)
+  //         })
+  //         .catch((err) => {
+  //           console.log(err)
+  //           return null
+  //         })
+  //       setuploading(false)
+  //     }
+  //   }, 1000)
+  // }
 
   return (
     <div>
@@ -74,7 +73,7 @@ export default function Home() {
         </nav> */}
         <NavBar style={{ borderBottom: 'none' }} />
         <div className="hero-button-wrapper">
-          {!uploading && !csvUploaded && (
+          {/* {!uploading && !csvUploaded && (
             <input
               className="hero-button"
               type="file"
@@ -82,13 +81,11 @@ export default function Home() {
               onChange={(e) => handleCSVUpload(e)}
               // onClick={() => handleUpload()}
             />
-          )}
-          {uploading && <div className="hero-button">Uploading</div>}
-          {csvUploaded && (
-            <Link className={`hero-button`} href={'/prediction'}>
-              START PREDICITION
-            </Link>
-          )}
+          )} */}
+          {/* {uploading && <div className="hero-button">Uploading</div>} */}
+          <Link className={`hero-button`} href={'/prediction'}>
+            START PREDICITION
+          </Link>
         </div>
       </div>
     </div>

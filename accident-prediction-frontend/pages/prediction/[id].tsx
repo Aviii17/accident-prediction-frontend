@@ -2,43 +2,29 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 import React, { Fragment, useEffect, useState } from 'react'
 import NavBar from '../../components/NavBar'
+import { useAccident } from '../../context/accidentContext'
 
 const SinglePrediciton = () => {
-  const router = useRouter()
-  const { id } = router.query
-  const [loadiing, setLoading] = useState(false)
   const [data, setData] = useState<any>(undefined)
-  const fetchData = (data_id: string) => {
-    setLoading(true)
-    axios
-      .request({
-        method: 'GET',
-        url: `http://localhost:4000/accidents/${data_id}`,
-      })
-      .then((res) => {
-        if (!res || !res.data) return
-        return setData(res.data)
-      })
-      .catch((err) => {
-        console.log(err)
-        return null
-      })
-    setLoading(false)
-  }
+  const router = useRouter()
+  const { id } = router.query as any
+  const { list, loading } = useAccident()
 
   useEffect(() => {
-    if (!id) return
-    fetchData(id as string)
-  }, [id])
-  console.log(data)
+    if (!list || list.length === 0 || !id) return
+    const filteredIndex = list.findIndex(
+      (item: any) => item._id.toString() == id.toString()
+    )
+    console.log(list[filteredIndex], filteredIndex, loading, list.length)
+    setData(list[filteredIndex])
+  }, [list, id])
+
   return (
     <Fragment>
       <NavBar />
       <div className="single-prediction-wrapper ">
         <div className="single-prediction">
-          {loadiing ? (
-            <p>Fetching Data</p>
-          ) : data ? (
+          {data ? (
             <Fragment>
               <p>
                 <span className="bold">Prediction is:&nbsp;</span> Yes, There is

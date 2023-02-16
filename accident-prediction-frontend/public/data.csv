@@ -1,0 +1,64 @@
+accident_id,date,time,latitude,longitude,no_of_vehicle,road_classification,collison_type,weather_condition,light_condition,visibility,severnity,causes
+202219393410026,12-08-2022,09:45:00,18.447118,73.837871,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,1
+202219393410027,29-06-2022,12:50:00,18.466101,73.817034,2,local road,vehicle to pedestrian,sunny,day,75,grievous injury,2
+202219393410025,19-08-2022,06:00:00,18.46094,73.821872,2,local road,vehicle to vehicle,sunny,night,100,grievous injury,3
+202219393410024,12-06-2022,09:42:00,18.456142,73.820632,1,local road,vehicle to pedestrian,sunny,day,75,simple injury,4
+202219393410022,04-06-2022,22:00:00,18.453996,73.827851,1,national highway,vehicle to vehicle,sunny,day,75,grievous injury,5
+202219393410021,30-06-2022,04:20:00,18.453996,73.827851,1,local road,vehicle to vehicle,sunny,night,100,grievous injury,6
+202219393410020,30-08-2022,16:20:00,18.453996,73.827851,1,local road,vehicle to pedestrian,sunny,day,25,grievous injury,7
+202219393410019,27-09-2022,16:45:00,18.453996,73.827851,2,local road,vehicle to pedestrian,sunny,night,75,grievous injury,8
+202219393410016,11-01-2022,17:30:00,18.459358,73.823597,2,local road,vehicle to pedestrian,sunny,day,100,grievous injury,9
+202219393410014,22-05-2022,15:40:00,18.451562,73.830123,1,expressway,vehicle to vehicle,sunny,twilight,75,grievous injury,10
+202219393410013,26-02-2022,13:45:00,18.452011,73.829751,2,expressway,vehicle to vehicle,sunny,day,25,fatal,11
+20221939341009,30-03-2022,08:30:00,18.456295,73.825214,2,national highway,vehicle to vehicle,sunny,day,75,simple injury,12
+20221939341002,02-01-2022,20:30:00,18.473915,73.81051,1,national highway,vehicle to vehicle,sunny,night,100,fatal,13
+202219393410001,16-02-2022,10:20:00,18.743857,73.810049,5,national highway,vehicle to vehicle,sunny,day,100,simple injury,14
+202119393410053,19-06-2021,18:30:00,18.453996,73.827851,1,local road,vehicle to pedestrian,sunny,twilight,100,fatal,15
+2021193410052,11-01-2021,09:30:00,18.453996,73.827851,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,16
+2.02119E+15,08-02-2021,19:00:00,18.473798,73.822127,1,local road,vehicle to pedestrian,sunny,night,100,grievous injury,17
+202119393410050,23-10-2021,12:20:00,18.456559,73.825807,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,18
+202119393410049,07-05-2021,03:20:00,18.459388,73.825035,1,expressway,vehicle to object,sunny,night,100,simple injury,19
+202119393410048,17sepr2021,09:30:00,18.463449,73.819123,1,local road,vehicle to pedestrian,sunny,night,100,fatal,20
+202119393410047,26-09-2021,12:30:00,18.463449,73.819123,1,local road,vehicle to pedestrian,sunny,day,100,grievous injury,21
+202119393410046,04-11-2021,16:00:00,18.463449,73.819123,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,22
+202119393410045,05-10-2021,09:30:00,18.463156,73.819185,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,23
+202119393410044,25-01-2021,17:20:00,18.457953,73.826365,2,local road,vehicle to vehicle,sunny,twilight,100,fatal,24
+202119393410043,18-02-2021,16:30:00,18.457953,73.826365,2,expressway,vehicle to vehicle,sunny,day,75,fatal,25
+202119393410042,11-01-2021,15:00:00,18.452562,73.828921,2,local road,vehicle to vehicle,sunny,day,100,fatal,26
+202119393410041,15-01-2021,19:00:00,18.452562,73.828921,2,national highway,vehicle to vehicle,sunny,twilight,100,fatal,27
+202119393410050,23-10-2021,12:20:00,18.456559,73.825507,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,28
+202119393410049,07-05-2021,03:20:00,18.459388,73.825035,1,expressway,vehicle to object,sunny,night,100,simple injury,29
+202119393410048,17-09-2021,21:30:00,18.463449,73.819123,1,local road,vehicle to pedestrian,sunny,night,100,fatal,30
+202119393410047,26-09-2021,12:30:00,18.463449,73.819123,1,local road,vehicle to pedestrian,sunny,day,100,grievous injury,31
+202119393410046,04-11-2021,16:00:00,18.463449,73.819123,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,32
+202119393410045,05-10-2021,21:30:00,18.463156,73.819185,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,33
+202119393410044,25-01-2021,17:20:00,18.457953,73.826365,2,local road,vehicle to vehicle,sunny,twilight,100,fatal,34
+202119393410043,18-02-2021,16:30:00,18.457953,73.826365,2,expressway,vehicle to vehicle,sunny,day,75,fatal,35
+202119393410042,11-06-2021,15:00:00,18.452562,73.828921,2,local road,vehicle to vehicle,sunny,day,100,fatal,36
+202119393410010,24-11-2022,00:00:00,18.453774,73.810714,2,local road,vehicle to bicycle,sunny,day,100,grievous injury,37
+202119393410011,16-12-2021,09:00:00,18.459358,73.823597,2,local road,vehicle to vehicle,sunny,day,100,grievous injury,38
+202119393410012,22-10-2021,09:15:00,18.452097,73.829342,2,national highway,vehicle to vehicle,sunny,night,100,fatal,39
+202119393410013,18-04-2021,09:00:00,18.452097,73.829342,2,local road,vehicle to vehicle,sunny,day,50,grievous injury,40
+202119393410014,11-01-2021,08:15:00,18.449303,73.832373,2,national highway,vehicle to vehicle,sunny,day,15,grievous injury,41
+202119393410016,04-07-2021,08:30:00,18.459185,73.823833,1,local road,vehicle to pedestrian,sunny,night,75,grievous injury,42
+202119393410017,21-02-2021,07:40:00,18.459185,73.823833,1,local road,vehicle to pedestrian,sunny,day,100,fatal,43
+202119393410018,06-09-2021,06:20:00,18.459185,73.823833,2,local road,vehicle to vehicle,sunny,twilight,15,fatal,44
+202119393410019,03-02-2021,11:45:00,18.448738,73.83303,2,local road,vehicle to vehicle,sunny,day,15,grievous injury,45
+202119393410011,16-12-2021,09:00:00,18.459358,73.823597,2,local road,vehicle to vehicle,sunny,day,100,grievous injury,46
+202119393410012,22-10-2021,09:15:00,18.452097,73.829342,2,national highway,vehicle to vehicle,sunny,night,100,fatal,47
+202119393410013,18-04-2021,09:00:00,18.452097,73.829342,2,local road,vehicle to vehicle,sunny,day,50,grievous injury,48
+202119393410014,11-01-2021,08:15:00,18.449303,73.832373,2,national highway,vehicle to vehicle,sunny,day,15,grievous injury,49
+202119393410020,28-09-2021,15:05:00,18.463951,73.819222,2,national highway,vehicle to vehicle,sunny,day,25,fatal,50
+202119393410022,17-08-2021,08:30:00,18.461316,73.821298,2,national highway,vehicle to vehicle,sunny,night,15,fatal,51
+202119393410023,23-11-2021,10:30:00,18.461316,73.821298,2,local road,vehicle to vehicle,sunny,day,25,grievous injury,52
+202119393410025,29-05-2021,16:30:00,18.46063,73.822867,1,local road,vehicle to vehicle,sunny,day,75,grievous injury,53
+202119393410026,01-03-2021,10:00:00,18.46063,73.822867,2,local road,vehicle to vehicle,sunny,day,100,fatal,54
+202119393410027,12-07-2021,17:15:00,18.46063,73.822867,1,local road,no collison,sunny,day,100,grievous injury,55
+202119393410028,24-09-2021,17:30:00,18.46063,73.822867,2,local road,vehicle to vehicle,sunny,day,100,fatal,56
+202119393410029,23-11-2021,09:30:00,18.46063,73.822897,2,local road,vehicle to object,sunny,day,100,simple injury,57
+202119393410041,15-06-2021,19:00:00,18.452562,73.828921,2,national highway,vehicle to vehicle,sunny,twilight,100,fatal,58
+202119393410042,11-06-2021,15:00:00,18.452562,73.828921,2,local road,vehicle to vehicle,sunny,day,100,fatal,59
+202119393410043,18-02-2021,16:30:00,18.457953,73.826365,2,national highway,vehicle to vehicle,sunny,day,75,fatal,60
+202119393410044,25-01-2021,17:20:00,18.457953,73.826365,2,local road,vehicle to vehicle,sunny,twilight,100,fatal,61
+202119393410045,05-10-2021,09:30:00,18.463156,73.819185,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,62
+202119393410047,26-09-2021,12:30:00,18.463449,73.819123,1,local road,vehicle to pedestrian,sunny,day,100,grievous injury,63

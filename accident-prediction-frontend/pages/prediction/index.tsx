@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 import React, { Fragment, ReactNode, useEffect, useState } from 'react'
 import NavBar from '../../components/NavBar'
+import { useAccident } from '../../context/accidentContext'
 
 const Dropdown = ({
   title,
@@ -42,7 +43,7 @@ const Dropdown = ({
                 .filter((v, i) => data.indexOf(v) == i)
                 .map((item, i) => (
                   <p
-                    key={0}
+                    key={i}
                     onClick={() => {
                       setValue(item)
                       setopen(false)
@@ -71,6 +72,7 @@ const Prediction = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
 
+  const { list } = useAccident()
   const router = useRouter()
 
   const handlePredict = () => {
@@ -80,28 +82,37 @@ const Prediction = () => {
 
   const fetchData = () => {
     setLoading(true)
-    axios
-      .request({
-        method: 'GET',
-        url: 'http://localhost:4000/accidents',
-        params: {
-          latitude,
-          longitude,
-          weather_condition,
-          date,
-          light_condition,
-          visibility,
-        },
-      })
-      .then((res) => {
-        if (!res || !res.data) return
-        return setData((res.data.result && res.data.result) || [])
-      })
-      .catch((err) => {
-        console.log(err)
-        return null
-      })
-    setLoading(false)
+    const result: any = list.filter((item: any) => {
+      let match = false
+
+      if (Number(longitude)) {
+        match = Number(item.longitude) === Number(longitude)
+      }
+
+      if (Number(latitude)) {
+        match = Number(item.latitude) === Number(latitude)
+      }
+
+      if (weather_condition) {
+        match = item.weather_condition === weather_condition
+      }
+
+      if (light_condition) {
+        match = item.light_condition === light_condition
+      }
+
+      if (Number(visibility)) {
+        match = Number(item.visibility) === Number(visibility)
+      }
+
+      if (date) {
+        match = item.date === date
+      }
+      return match
+    })
+
+    setData(result)
+    return setLoading(false)
   }
 
   useEffect(() => {

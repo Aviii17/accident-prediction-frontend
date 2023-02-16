@@ -111,6 +111,12 @@ nav a {
 
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
 .predition-wrapper {
   display: grid;
